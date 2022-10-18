@@ -1,4 +1,3 @@
 FROM openjdk:8-jdk-alpine
-ARG JAR_FILE=target/*.jar
-COPY ${JAR_FILE} app.jar
-ENTRYPOINT ["java","-jar","/app.jar"]
+copy ./target/tpAchatProject-1.0.jar tpAchatProject-1.0.jar
+CMD ["java","-jar","tpAchatProject-1.0.jar"]
